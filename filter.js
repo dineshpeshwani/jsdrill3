@@ -1,4 +1,3 @@
-
 function theFilter(theArray, theCallBackFunction)
 {
     let newArray = [] ;
