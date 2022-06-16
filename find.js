@@ -1,15 +1,14 @@
-function theFind(theArray, theCallBackFunction){
-    for (let i = 0; i < theArray.length; i++){
-        theCallBackFunction(theArray[i], i);
-    }
-}
-/*let arr = [];
-const myCallBack = (element, index) => 
+function theFind(theArray)
 {
-     if(element != 2){
-        arr[index] = element;
-     }
-     return arr[0];
-}*/
+    let newArray = [] ;
+    for (let i = 0; i < theArray.length; i++){
+        if(myCallBack(theArray[i])){
+            return newArray = theArray[i];
+        }
+    }
+    return newArray;
+}   
+
+const myCallBack = (element) => (element===1) ? true : false;
 
 module.exports = theFind;
